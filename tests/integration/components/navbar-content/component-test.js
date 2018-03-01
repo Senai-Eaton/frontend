@@ -31,7 +31,6 @@ module('Integration | Component | navbar-content', function(hooks) {
       {{/navbar-content}}
     `);
     
-    // console.log(this.element);
     assert.equal(this.element.textContent.replace(/[\r\n\s]s* /g, '').trim(), 'Agir Contato Sobre Cadastrar', 'Texto renderizado no bloco do componente');
   });
 });

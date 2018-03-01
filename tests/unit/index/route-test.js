@@ -4,8 +4,8 @@ import { setupTest } from 'ember-qunit';
 module('Unit | Route | index', function(hooks) {
   setupTest(hooks);
 
-  test('it exists', function(assert) {
+  test('Verifica existência de rota index', function(assert) {
     let route = this.owner.lookup('route:index');
-    assert.ok(route);
+    assert.ok(route, 'Rota index existente');
   });
 });

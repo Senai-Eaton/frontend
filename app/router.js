@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function () {
   this.route('contact', { path: 'contato' });
   this.route('signin');
+  this.route('login');
 });
 
 export default Router;

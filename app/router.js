@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('signin', { path: '/cadastre-se' });
   this.route('about', { path: '/sobre' });
   this.route('login', { path: '/login' });
+  this.route('home', {path:'/home'});
 });
 
 export default Router;

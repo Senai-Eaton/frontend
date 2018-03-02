@@ -1,1 +1,9 @@
-{{outlet}}
+<form action="">
+    {{input data-test-identification id="identification" type="text"}}
+    <label for="identification">Usuário:</label>
+
+    {{input data-test-password id="password" type="password"}}
+    <label for="password">Senha:</label>
+
+    {{#link-to 'home'}}<button data-test-loginButton type="submit">Login</button>{{/link-to}}
+</form>

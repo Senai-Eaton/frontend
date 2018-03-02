@@ -6,8 +6,27 @@ module('Acceptance | signin', function(hooks) {
   setupApplicationTest(hooks);
 
   test('Visitando a rota de cadastro', async function(assert) {
-    await visit('/'),
-    await click('button');
-    assert.equal(currentURL(), '/signin', 'Rota de cadastro acessada');
+    await visit('/cadastre-se'),
+    assert.equal(currentURL(), '/cadastre-se', 'Rota de cadastro existente');
+  });
+
+  test('Visitando a rota index', async function (assert){
+    await visit('/cadastre-se');
+    click('[data-test-index]').then(()=>{
+      assert.equal(currentURL(), '/', 'Acesso à rota index ok');
+    });
+  });
+
+  test('Visitando a rota sobre', async function(assert){
+    await visit('/cadastre-se');
+    click('[data-test-about]').then(()=>{
+      assert.equal(currentURL(), '/sobre', 'Acesso à rota sobre ok');
+    });
+  });
+  test('Visitando a rota contato', async function(assert){
+    await visit('/cadastre-se');
+    click('[data-test-contact]').then(()=>{
+assert.equal(currentURL(), '/contato', 'Acesso à rota contato ok');
+    });
   });
 });

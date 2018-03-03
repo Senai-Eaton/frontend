@@ -4,7 +4,7 @@ import { setupApplicationTest } from 'ember-qunit';
 
 module('Acceptance | index', function (hooks) {
   setupApplicationTest(hooks);
-  
+
   test('visiting /index', async function (assert) {
     assert.expect(1);
     await visit('/');
@@ -26,4 +26,5 @@ module('Acceptance | index', function (hooks) {
       assert.equal(currentURL(), '/sobre', 'Acesso à rota /sobre');
     });
   });
+
 });

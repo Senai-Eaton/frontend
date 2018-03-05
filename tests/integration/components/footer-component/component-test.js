@@ -12,15 +12,15 @@ module('Integration | Component | footer-component', function(hooks) {
 
     await render(hbs`{{footer-component}}`);
 
-    assert.equal(this.element.textContent.trim(), '2018', 'Renderiza o conteúdo de texto');
+    assert.equal(this.element.textContent.trim(), '2018 - Todos os direitos reservados', 'Renderiza o conteúdo de texto');
 
     // Template block usage:
     await render(hbs`
       {{#footer-component}}
-        2018
+        2018 - Todos os direitos reservados
       {{/footer-component}}
     `);
 
-    assert.equal(this.element.textContent.trim(), '2018', 'Renderiza conteúdo depois do carregamento do componente');
+    assert.equal(this.element.textContent.trim(), '2018 - Todos os direitos reservados', 'Renderiza conteúdo depois do carregamento do componente');
   });
 });

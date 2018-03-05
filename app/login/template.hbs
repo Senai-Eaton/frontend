@@ -1,18 +1,20 @@
-<div id="inputLogin">
-    <input data-test-identification id="username_input" type="email" placeholder="Email">
-    <input data-test-password id="password_input" type="password" placeholder="Senha">
+<div id="login">
+    <form action="login">
+        <input id="username" type="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Senha">
+        <button class="button">Entrar</button>
+        <p>
+            <a href="http://www.uol.com.br">Esqueceu a Senha?</a>
+        </p>
+        <button class="button">Cadastre-se agora</button>
+        <div class="info">Ou</div>
+        <div class="info">Entrar com a sua conta</div>
+        <div class="infoFB">
+            <i class="fa fa-facebook-square"></i>
+        </div>
+    </form>
 </div>
-<div id="buttonLogin">
-    {{#link-to 'home'}}
-    <button data-test-loginButton id="enter_button"> Entrar </button>
-    {{/link-to}}
-    <a href="http://www.uol.com.br"> Esqueceu a senha? </a>
-    <button id="register_button"> Cadastre-se Agora </button>
-</div>
-<div id="fbLogin">
-    Ou entrar com
-    <i class="fab fa-facebook-square"></i>
-</div>
+{{outlet}}
 {{!--
 <form action="">
     {{input data-test-identification id="identification" type="text"}}

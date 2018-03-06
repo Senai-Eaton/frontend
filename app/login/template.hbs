@@ -1,7 +1,7 @@
 <div id="login">
-    <form action="login">
-        <input data-test-identification id="username" type="email" placeholder="Email">
-        <input data-test-password id="password" type="password" placeholder="Senha">
+    <form>
+        {{input data-test-identification id="username" type="email" placeholder="Email"}}
+        {{input data-test-password id="password" type="password" placeholder="Senha"}}
         {{#link-to data-test-loginButton 'home' tagName="button" class="button"}}Entrar{{/link-to}}
         <p>
             <a href="http://www.uol.com.br">Esqueceu a Senha?</a>
@@ -14,15 +14,3 @@
         </div>
     </form>
 </div>
-{{outlet}}
-{{!--
-<form action="">
-    {{input data-test-identification id="identification" type="text"}}
-    <label for="identification">Usuário:</label>
-
-    {{input data-test-password id="password" type="password"}}
-    <label for="password">Senha:</label>
-
-    {{#link-to 'home'}}
-    <button data-test-loginButton type="submit">Login</button>{{/link-to}}
-</form> --}}

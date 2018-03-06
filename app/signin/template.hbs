@@ -1,1 +1,8 @@
-{{outlet}}
+<form action="">
+    {{input data-test-name type="text" placeholder="Nome Completo" autocomplete="off"}}
+    {{input data-test-email type="email" placeholder="Email" autocomplete="off"}}
+    {{input data-test-birth type="date" placeholder="Data de Nascimento: xx/xx/xxxx" autocomplete="off"}}
+    {{input data-test-password type="password" placeholder="Senha" autocomplete="off"}}
+    {{input data-test-confirmation type="password" placeholder="Confirmação de Senha" autocomplete="off"}}
+    {{#link-to data-test-ok 'home' tagName="button"}}Cadastrar{{/link-to}}
+</form>

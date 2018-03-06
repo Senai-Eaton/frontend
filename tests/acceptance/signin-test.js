@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit, currentURL, click } from '@ember/test-helpers';
+import { visit, currentURL, click, fillIn } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 
 module('Acceptance | signin', function(hooks) {
@@ -28,5 +28,16 @@ module('Acceptance | signin', function(hooks) {
     click('[data-test-contact]').then(()=>{
 assert.equal(currentURL(), '/contato', 'Acesso à rota contato ok');
     });
+  });
+  test('Deverá efetuar o cadastro de usuário', async assert =>{
+    await visit('/cadastre-se');
+    await fillIn(('[data-test-name]'), 'Fulano da Silva');
+    await fillIn(('[data-test-birth]'), '30/03/1993');
+    await fillIn(('[data-test-email]'), 'yagosenhorini30@gmail.com');
+    await fillIn(('[data-test-password]'), 'mudar1234');
+    await fillIn(('[data-test-confirmation]'), 'mudar1234');
+    await click('[data-test-ok]').then(()=>{
+    assert.equal(currentURL(), '/home', 'Usuário cadastrado com sucesso');
+    }); 
   });
 });

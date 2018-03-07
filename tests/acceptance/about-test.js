@@ -24,7 +24,7 @@ module('Acceptance | about', function(hooks) {
     });
   });
   test('Deve visitar a rota de cadastro', async function(assert){
-    await visit('/cadastre-se');
+    await visit('/sobre');
     click('[data-test-signin]').then(()=>{
       assert.equal(currentURL(), '/cadastre-se', 'Rota de cadastro acessada');
     })

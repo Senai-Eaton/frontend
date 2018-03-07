@@ -1,0 +1,15 @@
+.image-home{
+    width: 100%;
+    height: 300px;
+
+}
+
+
+@media screen and (min-width: 1440px){
+    .image-home{
+        width: 90%;
+        height: 708px;
+        margin: 0 5%;
+        padding: 30px 5%;
+    }
+}

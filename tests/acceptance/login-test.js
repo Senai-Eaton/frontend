@@ -23,19 +23,6 @@ module('Acceptance | login', function (hooks) {
     });
   });
 
-  test('Visitando a rota sobre', async function (assert) {
-    await visit('/login');
-    click('[data-test-about]').then(() => {
-      assert.equal(currentURL(), '/sobre', 'Acesso à rota sobre ok');
-    });
-  });
-  test('Visitando a rota contato', async function (assert) {
-    await visit('/login');
-    click('[data-test-contact]').then(() => {
-      assert.equal(currentURL(), '/contato', 'Acesso à rota contato ok');
-    });
-  });
-
   test('Deve efetuar o login', async function (assert) {
     await visit('/login');
     await fillIn(('[data-test-identification]'), 'exemplo@exemplo.com');

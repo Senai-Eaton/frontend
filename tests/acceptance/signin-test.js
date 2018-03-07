@@ -17,18 +17,6 @@ module('Acceptance | signin', function(hooks) {
     });
   });
 
-  test('Visitando a rota sobre', async function(assert){
-    await visit('/cadastre-se');
-    click('[data-test-about]').then(()=>{
-      assert.equal(currentURL(), '/sobre', 'Acesso à rota sobre ok');
-    });
-  });
-  test('Visitando a rota contato', async function(assert){
-    await visit('/cadastre-se');
-    click('[data-test-contact]').then(()=>{
-assert.equal(currentURL(), '/contato', 'Acesso à rota contato ok');
-    });
-  });
   test('Deverá efetuar o cadastro de usuário', async assert =>{
     await visit('/cadastre-se');
     await fillIn(('[data-test-name]'), 'Fulano da Silva');

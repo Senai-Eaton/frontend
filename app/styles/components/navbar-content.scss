@@ -22,6 +22,21 @@ a:visited{
 a:link{
     color: darkgray;
 }
+.menu{
+    display: inline-block;
+}
+.home{
+    margin-right:25%;
+}
+.cadastrar{
+    border: 1px solid darkgray;
+    padding: 5px;
+    margin-right: 5%;
+}
+.login{
+    border: 1px solid darkgray;
+    padding: 5px;
+}
 
 .linha{
     width: 95%;

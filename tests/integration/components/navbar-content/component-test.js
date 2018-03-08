@@ -13,7 +13,7 @@ module('Integration | Component | navbar-content', function(hooks) {
     await render(hbs`{{navbar-content}}`);
 
     assert.equal(this.$('ul li.home').text(), 'Agir', 'Texto do ícone');
-    assert.equal(this.$('ul li.menu:first').text(), 'Contato', 'Texto de contato');
+    assert.equal(this.$('ul li.menu:first').text(), 'Agir', 'Texto de contato');
 
     // Template block usage:
     await render(hbs`
@@ -22,8 +22,6 @@ module('Integration | Component | navbar-content', function(hooks) {
       <nav>
           <ul>
               <li class="home">Agir</li>
-              <li class="menu">Contato</li>
-              <li class="menu">Sobre</li>
               <li class="menu cadastrar">Cadastrar</li>
           </ul>
       </nav>
@@ -31,6 +29,6 @@ module('Integration | Component | navbar-content', function(hooks) {
       {{/navbar-content}}
     `);
     
-    assert.equal(this.element.textContent.replace(/[\r\n\s]s* /g, '').trim(), 'Agir Contato Sobre Cadastrar Login', 'Texto renderizado no bloco do componente');
+    assert.equal(this.element.textContent.replace(/[\r\n\s]s* /g, '').trim(), 'Agir Cadastrar Login', 'Texto renderizado no bloco do componente');
   });
 });

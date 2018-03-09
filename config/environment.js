@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'senai-front',
     environment,
@@ -16,7 +16,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    FB: {
+      appId: '151236328889136',
+      xfbml: true,
+      version: 'v2.12'
 
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

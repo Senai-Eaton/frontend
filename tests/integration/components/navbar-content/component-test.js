@@ -10,11 +10,6 @@ module('Integration | Component | navbar-content', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`{{navbar-content}}`);
-
-    assert.equal(this.$('ul li.home').text(), 'Agir', 'Texto do ícone');
-    assert.equal(this.$('ul li.menu:first').text(), 'Agir', 'Texto de contato');
-
     // Template block usage:
     await render(hbs`
       {{#navbar-content}}
@@ -29,6 +24,6 @@ module('Integration | Component | navbar-content', function(hooks) {
       {{/navbar-content}}
     `);
     
-    assert.equal(this.element.textContent.replace(/[\r\n\s]s* /g, '').trim(), 'Agir Cadastrar Login', 'Texto renderizado no bloco do componente');
+    assert.equal(this.element.textContent.replace(/[\r\n\s]s* /g, '').trim(), 'Cadastrar Login', 'Texto renderizado no bloco do componente');
   });
 });

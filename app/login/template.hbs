@@ -3,7 +3,7 @@
     <form>
         {{input data-test-identification id="username" type="email" placeholder="Email"}}
         {{input data-test-password id="password" type="password" placeholder="Senha"}}
-        {{#link-to data-test-loginButton 'home' tagName="button" class="button"}}Entrar{{/link-to}}
+        {{#link-to data-test-loginButton 'home'}}<button {{action 'alerta'}}>Entrar</button>{{/link-to}}
         <p>
             <a href="http://www.uol.com.br">Esqueceu a Senha?</a>
         </p>

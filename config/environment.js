@@ -7,6 +7,7 @@ module.exports = function (environment) {
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
+      
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
@@ -16,12 +17,7 @@ module.exports = function (environment) {
         Date: false
       }
     },
-    FB: {
-      appId: '151236328889136',
-      xfbml: true,
-      version: 'v2.12'
-
-    },
+  
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -50,6 +46,12 @@ module.exports = function (environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+  }
+
+  ENV.FB = {
+    appId: '151236328889136',
+    xfbml: true,
+    version: 'v2.12'
   }
 
   return ENV;

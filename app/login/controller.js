@@ -1,30 +1,19 @@
-import Ember from 'ember';
+
 import Controller from '@ember/controller';
+import {inject as service} from '@ember/service';
 
 export default Controller.extend({
-  fb: Ember.inject.service(),
+  fb: service(),
   actions: {
     onClick() {
-      this.get('fb').login('email public_profile').then(function () {
+      this.get('fb').login('email public_profile').then(()=> {
+      this.transitionToRoute('home');
       });
     },
     alerta() {
-      alert('Oi')
+      alert('Oi');
+      this.transitionToRoute('home');
     },
-
-    login: function (response) {
-      console.log("Ctrl action",response)
-      if (response.authResponse) {
-        console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me', function (response) {
-          console.log('Good to see you, ' + response.name + '.');
-        });
-      } else {
-        console.log('User cancelled login or did not fully authorize.');
-      }
-    }
-
-
   }
 });
 

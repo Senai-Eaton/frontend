@@ -1,8 +1,14 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+//Main files
 @import "index.scss";
 @import "home.scss";
+@import "login.scss";
+
+//components
 @import "./components/navbar-content.scss";
 @import "./components/footer-component.scss";
+@import "./components/form-login.scss";
+@import "./components/form-sign.scss";
 
 //Images//
 @import "./images/image.scss";

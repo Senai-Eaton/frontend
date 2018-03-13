@@ -33,7 +33,7 @@ a:link{
     padding: 5px;
     margin-right: 5%;
 }
-.login{
+.login__item{
     border: 1px solid darkgray;
     padding: 5px;
 }
@@ -44,6 +44,29 @@ a:link{
     margin: 1% auto;
     background-color: darkgray;
     clear: both;
+}
+
+@media screen and (min-width: 768px){
+    .home{
+        margin-right:67%;
+    }
+    .cadastrar{
+        border: 1px solid darkgray;
+        padding: 5px;
+        margin-right: 5%;
+    }
+    .login__item{
+        border: 1px solid darkgray;
+        padding: 5px;
+    }
+    
+    .linha{
+        width: 95%;
+        height: 1px;
+        margin: 1% auto;
+        background-color: darkgray;
+        clear: both;
+    }
 }
 
 

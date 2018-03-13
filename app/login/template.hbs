@@ -1,15 +1,8 @@
 {{navbar-content}}
 <div id="login">
-    <form>
-        {{input data-test-identification id="username" type="email" placeholder="Email"}}
-        {{input data-test-password id="password" type="password" placeholder="Senha"}}
-        {{#link-to data-test-loginButton 'home'}}<button {{action 'alerta'}}>Entrar</button>{{/link-to}}
-        <p>
-            <a href="http://www.uol.com.br">Esqueceu a Senha?</a>
-        </p>
-        <button class="button">Cadastre-se agora</button>
-        <div class="info">Ou</div>
-        <div class="info">Entrar com a sua conta</div>
-        {{fb-login logar="login"}}
-    </form>
+    {{form-login alertar=(action 'alerta')}}
+    <p class="divisor">Ou</p>
+    {{fb-login logar=(action "onClick")}}
+    <p><a href="http://www.uol.com.br">Esqueceu a Senha?</a></p>
+    <button class="login signin">Cadastre-se agora</button>
 </div>

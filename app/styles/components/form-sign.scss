@@ -10,8 +10,24 @@
     margin: 2.5% 10%;
     border: none;
     border-bottom: 1px solid black;
+    font-size: 17px;
 }
 
-.button__sign{
-    
+@media screen and (min-width: 768px){
+.form__sign{
+    width: 90%;
+    height: 40px;
+    margin: 5% 5%;
+    background: #ffffff;
+    border: none;
+}
+.form-input__sign{
+    font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .form__sign{
+        font-size: 24px;
+    }
 }

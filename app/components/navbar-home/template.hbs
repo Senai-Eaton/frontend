@@ -1,1 +1,9 @@
-{{yield}}
+<header class="navbar">
+    <nav class="navigation">
+        <ul class="navigation__items">
+            {{#link-to 'home' tagName="li" class="menu home__list"}}<img img class="image-logo" src="../img/AGIR.jpg" alt="Logo">{{/link-to}}
+            <li class="menu home__list">Olá, {{model.name}}</li>
+            <li class="menu home__list"><span {{action 'logout'}}>Sair</span></li>
+        </ul>
+    </nav>
+</header>

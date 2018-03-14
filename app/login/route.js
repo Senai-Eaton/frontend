@@ -8,6 +8,7 @@ export default Route.extend(FBLoginStatus, {
   
     beforeModel() {
       window.checkLoginState = () => {
+        console.log(this.checkLoginStatus());
         this.checkLoginStatus();
       };
     },

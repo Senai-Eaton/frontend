@@ -5,7 +5,6 @@ export default Mixin.create({
       
         return this.get('fb').getLoginStatus().then((response) => {
           if (response.status === 'connected') {
-            console.log(this.get('fb').getLoginStatus())
             this.transitionTo('home');
           } else {
             this.transitionTo('login');

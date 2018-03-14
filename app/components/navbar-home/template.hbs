@@ -1,9 +1,10 @@
-<header class="navbar">
-    <nav class="navigation">
-        <ul class="navigation__items">
-            {{#link-to 'home' tagName="li" class="menu home__list"}}<img img class="image-logo" src="../img/AGIR.jpg" alt="Logo">{{/link-to}}
-            <li class="menu home__list">Olá, {{model.name}}</li>
-            <li class="menu home__list"><span {{action 'logout'}}>Sair</span></li>
+<header class="navbar__home">
+    <nav class="navigation__home">
+        <ul class="navigation__items--home">
+            {{#link-to 'home' tagName="li" class="menu__home home__list--mobile"}}<img class="image__logo--mobile" src="../img/perfil_1.jpg" alt="Foto Perfil">{{/link-to}} 
+            {{#link-to 'home' tagName="li" class="menu__home home__list--main"}}<img class="image__logo--desk" src="../img/AGIR.jpg" alt="Logo">{{/link-to}}
+            <li class="menu__home home__list--main">{{model.name}}</li>
+            <li class="menu__home home__list--exit"><span {{action 'logout'}}>Sair</span></li>
         </ul>
     </nav>
 </header>

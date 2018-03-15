@@ -1,14 +1,32 @@
-.homeHeader{
-    display: inline-block;
+.home__body{
+    width: 100%;
+    height: auto;
 }
-.homeBody{
-    display: inline-block;
-    background-color: blue;
+
+.input__search{
+    width: 60%;
+    height: 35px;
+    margin: 5% 20% 10% 20%;
+    border: 5px solid darkgray;
 }
-.homeFooter{
-    background-color: red;
-    display: inline-block;
+
+.home__footer{
+    span{
+        margin-top: 10px;
+        display: block;
+    }
+    width: 100%;
+    height: 40px;
+    background-color:#08A6A6;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-.eventoGrid{
-    display: inline-block;
+
+.title__post{
+    margin-left: 5%;
+    margin-bottom: 10%;
+    text-align: left;
+    color: darkgray;
 }

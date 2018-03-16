@@ -1,4 +1,8 @@
-<article class="post__timeline">
-    <img class="img__ong" src="../img/evento_voluntariado_2.jpg" alt="Foto ONG">
-    <p class="post__name">{{post.name}}</p>
+<article class="post">
+    {{#each model as |user|}}
+    <div class="post__timeline">
+        <img class="img__ong" src="../img/evento_voluntariado_3.jpg" alt="Foto ONG">
+        <p class="post__name">{{user.name}}</p>
+    </div>
+    {{/each}}
 </article>

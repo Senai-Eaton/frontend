@@ -1,9 +1,10 @@
- {{navbar-home model=model}}
+ {{navbar-home logout="sair" fb=model.fb}}
 <section class="home__body">
     {{component-search}}
     <h3 class="title__post">Encontre uma ONG</h3>
-    {{post-box post=model}}
-    <h3>Eventos</h3>
+    {{post-box model=model.user}}
+    <h3 class="title__events">Eventos</h3>
+    {{event-box event=model}}
 </section>
 
 <footer class="home__footer">

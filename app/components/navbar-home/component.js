@@ -6,11 +6,7 @@ export default Component.extend({
     
     actions:{
         logout(){
-            let desconnect = this.get('fb').logout('email public_profile');
-            desconnect.then(()=>{
-                alert('Deslogado');
-               
-            })
+           this.sendAction("logout");
         }
     }
 });

@@ -25,8 +25,15 @@
 }
 
 .title__post{
+    width: 55%;
     margin-left: 5%;
-    margin-bottom: 10%;
-    text-align: left;
+    margin-bottom: 8%;
+    color: darkgray;
+}
+
+.title__event{
+    width: 25%;
+    height: auto;
+    margin: 8% auto 5% 5%;
     color: darkgray;
 }

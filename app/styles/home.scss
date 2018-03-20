@@ -4,10 +4,10 @@
 }
 
 .input__search{
-    width: 60%;
+    width: 80% !important;
     height: 35px;
-    margin: 5% 20% 10% 20%;
-    border: 5px solid darkgray;
+    margin: 5% 9% 10% 9% !important;
+    border: 3px solid darkgray !important; 
 }
 
 .home__footer{
@@ -25,15 +25,18 @@
 }
 
 .title__post{
-    width: 55%;
-    margin-left: 5%;
-    margin-bottom: 8%;
+    width: 80% !important;
+    margin-left: 5% !important;
+    margin-bottom: 8% !important;
+    margin-top: 3% !important;
+    font-size: 26px;
     color: darkgray;
 }
 
 .title__event{
-    width: 25%;
-    height: auto;
-    margin: 8% auto 5% 5%;
+    width: 25% !important;
+    height: auto !important;
+    margin: 8% auto 5% 5% !important;
+    font-size: 26px;
     color: darkgray;
 }

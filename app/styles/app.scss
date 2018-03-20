@@ -1,8 +1,11 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css");
+
 //Main files
 @import "index.scss";
 @import "home.scss";
 @import "login.scss";
+@import "event.scss";
 
 //components
 @import "./components/navbar-content.scss";
@@ -11,6 +14,7 @@
 @import "./components/form-login.scss";
 @import "./components/form-sign.scss";
 @import "./components/post-box.scss";
+@import "./components/event-description.scss";
 
 //Images//
 @import "./images/image.scss";
@@ -28,4 +32,8 @@ html, body{
     height: auto;
     font-family: "Arial", Sans-Serif;
     align-content: center;
+}
+
+nav ul li.active {
+    background-color: transparent !important;
 }

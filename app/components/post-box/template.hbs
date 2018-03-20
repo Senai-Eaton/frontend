@@ -1,9 +1,7 @@
 <article class="post">
-    {{#each model as |user|}}
     <div class="post__timeline">
         <img class="img__ong" src="../img/evento_voluntariado_3.jpg" alt="Foto ONG">
-        <p class="post__name">{{user.name}}</p>
-        {{#link-to 'profile'}}<span class="post__visit">{{user.username}}</span>{{/link-to}}
+        <p class="post__name">{{model.name}}</p>
+        {{#link-to 'profile'}}<span class="post__visit">{{visit}}</span>{{/link-to}}
     </div>
-    {{/each}}
 </article>

@@ -6,7 +6,7 @@ export default Route.extend({
     model() {
         console.log(this.get('fb').api('/me'));
         return Ember.RSVP.hash({
-            user: this.get('store').findAll('user'),
+            user: this.get('store').findRecord('user', 1),
             fb: this.get('fb').api('/me')
         });
     },

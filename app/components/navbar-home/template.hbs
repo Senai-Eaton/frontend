@@ -1,10 +1,14 @@
+
 <header class="navbar__home">
-    <nav class="navigation__home">
+    <nav class="navigation__home teal lighten-2">
         <ul class="navigation__items--home">
-            {{#link-to 'home' tagName="li" class="menu__home home__list--mobile"}}<img class="image__logo--mobile" src="../img/perfil_1.jpg" alt="Foto Perfil">{{/link-to}} 
-            {{#link-to 'home' tagName="li" class="menu__home home__list--main"}}<img class="image__logo--desk" src="../img/AGIR.jpg" alt="Logo">{{/link-to}}
+            {{#link-to 'home' tagName="li" class="menu__home home__list--mobile"}}
+            <img class="image__logo--mobile" src="../img/perfil_1.jpg" alt="Foto Perfil">{{/link-to}} {{#link-to 'home' tagName="li" class="menu__home home__list--main"}}
+            <img class="image__logo--desk" src="../img/AGIR.jpg" alt="Logo">{{/link-to}}
             <li class="menu__home home__list--main">{{fb.name}}</li>
-            <li class="menu__home home__list--exit"><span {{action 'logout'}}>Sair</span></li>
+            <li class="menu__home home__list--exit">
+                <span {{action 'logout'}}>Sair</span>
+            </li>
         </ul>
     </nav>
 </header>

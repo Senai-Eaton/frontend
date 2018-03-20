@@ -17,4 +17,7 @@ export default Route.extend({
       }
     });
   },
+  model(){
+    return this.get('fb').api('/me');
+  }
 });

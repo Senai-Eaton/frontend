@@ -41,3 +41,34 @@
     display: block;
      
 }
+
+@media screen and (min-width: 1440px){
+
+    .post__timeline{
+        width: 50%;
+        margin: 0 25% 1.25% 25%;
+        text-align: center;
+        display: block;
+    }
+    
+    .img__ong{
+        width: 50%;
+        height: 120px;
+        margin:0 25%;
+        display: block;
+    }
+    
+    .post__name{
+        width: 20%;
+        margin: 0 40%;
+        text-align: center;
+    }
+    
+    .events__timeline{
+        width: 50%;
+        margin: 0 25% 1.25% 25%;
+        text-align: center;
+        display: block; 
+    }
+    
+}

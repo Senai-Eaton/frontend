@@ -1,7 +1,7 @@
 .navbar{
     width: 100%;
     height: auto;
-    background: transparent;
+    position: relative;
     z-index: 2;
 }
 
@@ -60,13 +60,6 @@ a:link{
         padding: 5px;
     }
     
-    .linha{
-        width: 95%;
-        height: 1px;
-        margin: 1% auto;
-        background-color: darkgray;
-        clear: both;
-    }
 }
 
 
@@ -75,29 +68,41 @@ a:link{
         width: 100%;
         height:60px;
         margin:auto;
-        padding: 2.5px 0;
+        background: transparent;
+        position: relative;
+        padding: 0;
     }
     
     .navigation__items{
-        width: 90%;
+        width: 95%;
         height: 60px;
-        margin: auto;
-        padding: 5px 0;
-        display: block;
-    }
-    .menu{
+        margin: 0 2.5%;
+        padding: 0;
+        position: relative;
         display: inline-block;
     }
+    
     .home{
-        margin-right:75%;
+        width: auto;
+        height: auto;
+        margin: 0.25% 70% 0 5%;
+        position: relative;
     }
     .cadastrar{
+        top: -15px;
         border: 1px solid darkgray;
-        padding: 5px;
-        margin-right: 5%;
+        // margin-right: 5%;
+        position: relative;
+        display: inline;
     }
-    .login{
+    .login__item{
+        top: -15px;
         border: 1px solid darkgray;
-        padding: 5px;
+        position: relative;
+        display: inline;
+    }
+
+    .linha{
+        display: none;
     }
 }

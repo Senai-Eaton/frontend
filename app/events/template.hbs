@@ -1,2 +1,5 @@
 {{navbar-home fb=model.fb}}
+{{#each model as |model|}}
+{{model.nome}}
+{{/each}}
 {{event-description event=model.user}}

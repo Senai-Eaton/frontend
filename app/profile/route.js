@@ -1,9 +1,9 @@
 import Route from '@ember/routing/route';
+import Ember from 'ember';
+import hash from 'rsvp';
 
 export default Route.extend({
-    model(params) {
-        return Ember.RSVP.hash({
-            user: this.get('store').findRecord('user', 1)
-        });
+    model() {
+        return this.get('store').findRecord('interesse', 9);
     }
 });

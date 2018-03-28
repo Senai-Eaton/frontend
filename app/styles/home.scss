@@ -6,8 +6,18 @@
 .input__search{
     width: 80% ;
     height: 35px;
-    margin: 5% 9% 10% 9% ;
-    border: 3px solid darkgray ; 
+    margin: 3rem auto;
+    border: 2px solid #07a5a6;
+    padding: 22px 16px;
+    display: block;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    transition: 0.2s;
+
+    &:focus {
+        border-color: #b4cd56;
+        transform: scale(1.03);
+    }
 }
 
 .home__footer{
@@ -25,10 +35,8 @@
 }
 
 .title__post{
-    width: 80% ;
-    margin-left: 5% ;
-    margin-bottom: 8% ;
-    margin-top: 3% ;
+    width: 80%;
+    margin: 2rem 3rem;
     font-size: 26px;
     color: darkgray;
 }
@@ -44,9 +52,7 @@
 
 @media screen and (min-width: 1440px){
     .input__search{
-        width: 25%;
-        height: 35px;
-        margin: 2.5% 37.5%; 
+        width: 45%;
     }
 
     .title__post{

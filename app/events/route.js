@@ -10,5 +10,14 @@ export default Route.extend({
             fb: this.get('fb').api('/me'),
             user:this.get('store').findRecord('user', 1)
         })
+    },
+
+    actions:{
+        sair(){
+            this.get('fb').logout('email public_profile').then(()=>{
+                alert('Deslogado');
+                this.transitionTo('index');
+            })
+        }
     }
 });

@@ -2,7 +2,7 @@ import DS from 'ember-data';
 import Ember from 'ember'
 
 export default DS.RESTSerializer.extend({
-    normalizeResponse(store, primaryModelClass, payload, id, requestType) {
+    normalizeArrayResponse(store, primaryModelClass, payload, id, requestType) {
         if (payload.enderecos)
             payload = { enderecos: payload.enderecos }
             console.log(payload)

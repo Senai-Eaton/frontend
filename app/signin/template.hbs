@@ -1,2 +1,2 @@
 {{navbar-content}}
-{{form-sign model=model cadastrar=(action 'signin' model)}}
+{{form-sign endereco=model.endereco voluntario=model.voluntario cadastrar=(action 'signin' model.endereco model.voluntario)}}

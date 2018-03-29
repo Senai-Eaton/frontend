@@ -4,6 +4,7 @@
     background: #08A6A6;
     border-top: 2px solid #fff;
     z-index: 2;
+    box-shadow: 0 3px 25px rgba(0,0,0,.2);
 }
 .navigation__items--home{
     list-style: none;
@@ -18,7 +19,6 @@
 }
 
 .home__list--exit{
-    margin-left: 50px;
     font-weight: bold;
     color: white;
 }

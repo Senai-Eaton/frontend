@@ -1,25 +1,54 @@
+%card {
+    width: 20vw;
+    position: relative;
+    display: block;
+    transition: 0.15s;
+    margin: 0;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+        z-index: 1;
+        box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    }
+}
+
+.cards__container {
+    display: flex;
+}
+
+.card__infos {
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,.9));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+
 .post{
     width: 100%;
     height: auto;
 }
 .post__timeline{
-    width: 70%;
-    margin: 2.5% 15%;
-    display: block;
+    @extend %card;
 }
 
 .img__ong{
-    width: 100%;
-    height: 120px;
+    width: 20vw;
+    object-fit: cover;
+    height: 420px;
     display: block;
 }
 
 .post__name{
     width: 100%;
     text-align: justify;
-    color: darkgray;
+    color: #eee;
     font-weight: bold;
     display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .post__visit{
@@ -27,48 +56,21 @@
 }
 
 //Eventos//
-
 .event{
     width: 100%;
     height: auto;
 }
 
 .events__timeline{
-    width: 70%;
-    margin: 2.5% 15%;
     color: darkgray;
     font-weight: bold;
-    display: block;
-     
+    @extend %card;
 }
 
 @media screen and (min-width: 1440px){
-
-    .post__timeline{
-        width: 50%;
-        margin: 0 25% 1.25% 25%;
-        text-align: center;
-        display: block;
-    }
-    
     .img__ong{
-        width: 50%;
-        height: 120px;
-        margin:0 25%;
+        width: 20vw;
+        height: 420px;
         display: block;
     }
-    
-    .post__name{
-        width: 20%;
-        margin: 0 40%;
-        text-align: center;
-    }
-    
-    .events__timeline{
-        width: 50%;
-        margin: 0 25% 1.25% 25%;
-        text-align: center;
-        display: block; 
-    }
-    
 }

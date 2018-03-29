@@ -5,9 +5,10 @@ export default Route.extend({
     fb: service(),
     model() {
         return Ember.RSVP.hash({
-            user: this.get('store').findRecord('user', 1),
+            voluntario: this.get('store').findRecord('voluntario', 1),
+            atuacao: this.get('store').findRecord('atuacao', 2),
             fb: this.get('fb').api('/me'),
-            atuacao: this.get('store').findRecord('atuacao', 2)
+
         });
     },
   actions:{

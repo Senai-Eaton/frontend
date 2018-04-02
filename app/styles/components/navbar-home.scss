@@ -1,6 +1,6 @@
 .navbar__home{
     width: 100%;
-    height: auto;
+    height: 65px;
     background: #08A6A6;
     border-top: 2px solid #fff;
     z-index: 2;
@@ -8,74 +8,68 @@
 }
 .navigation__items--home{
     list-style: none;
-    display: inline-block;
+    display: flex;
     font-weight: bold;
     color: white;
+}
+
+.navigation__user--infos {
+    display: flex;
+    align-items: center;
 }
 
 .home__list--main{
     font-weight: bold;
     color: white;
+    flex: 1;
 }
 
 .home__list--exit{
     font-weight: bold;
     color: white;
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .menu__home{
-    height: 40px;
     padding: 10px 0;
-    display: inline-block;
 }
 
 .image__logo--mobile{
     width: 40px;
-    height: 40px;
-    margin: 0 40px 0 10px;
+    margin: 0 20px 0 10px;
     border-radius: 20px;
     display: block;
 }
 
 .image__logo--desk{
-    display: none;
+    width: 40px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    display: block;
+}
+
+.home__list--profile {
+    display: flex;
+    font-weight: bold;
+    color: white;
 }
 
 @media screen and (min-width: 1440px){
-    .navigation__items--home{
-        width: 100%;
-        list-style: none;
-        display: inline-block;
-    }
-
-    .image__logo--desk{
-        width: 40px;
-        height: 40px;
-        margin: 0px 10px;
-        border-radius: 20px;
-        display: block;
-    }
-
-    .image__logo--mobile{
-        display: none;
-    }
-
-    .home__list--profile{
-        margin-left: 75%;
-        margin-right: 2.5%;
-        font-weight: bold;
-        color: white;
-    }
-    
-    .home__list--exit{
-        margin-left: 80px;
-        font-weight: bold;
-        color: white;
-    }
-    
     .menu__home{
-        height: 40px;
         padding: 10px 0;
     }
+}
 
+@media screen and (max-width: 380px) {
+    .home__list--profile {
+        span {
+            display: none;
+        }
+    }
+
+    .home__list--exit {
+        margin: 0 0.5rem;
+    }
 }

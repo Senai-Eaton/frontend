@@ -12,7 +12,7 @@ export default Route.extend({
     //         atuacao: this.get('store').findRecord('atuacao',1)
     //     });
     // }
-    model(){
-        return this.get('store').findAll('atuacao')
+    model(params){
+        return this.get('store').queryRecord('atuacao', {id: params.id});
     }
 });

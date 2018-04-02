@@ -12,5 +12,6 @@ export default DS.RESTSerializer.extend({
         if (hash.voluntario) {
             hash = hash.voluntario;
         }
-    }
+    },
+   
 });

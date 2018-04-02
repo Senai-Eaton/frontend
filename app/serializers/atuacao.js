@@ -1,8 +1,15 @@
 import DS from 'ember-data';
 
 export default DS.RESTSerializer.extend({
-    normalizeSingleResponse(store, primaryModelClass, payload, id, requestType) {
+    normalizeResponse(store, primaryModelClass, payload, id, requestType) {
         payload = { atuacaos: payload }
         return this._super(store, primaryModelClass, payload, id, requestType);
     },
+    modelNameFromPayloadKey(payloadKey) {
+        if (payloadKey === 'api/atuacaos') {
+          return this._super(payloadKey.replace('api/', ''));
+        } else {
+         return this._super(payloadKey);
+        }
+      }
 });

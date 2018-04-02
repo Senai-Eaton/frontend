@@ -35,10 +35,10 @@
 }
 
 .title__post{
-    width: 80%;
-    margin: 2rem 3rem;
+    width: 100%;
+    margin: 2rem 0;
     font-size: 26px;
-    color: darkgray;
+    color: #455A64;
 }
 
 .title__event{
@@ -53,12 +53,6 @@
 @media screen and (min-width: 1440px){
     .input__search{
         width: 45%;
-    }
-
-    .title__post{
-        width: 17%;
-        margin: 2.5% auto;
-        text-align: center;
     }
     
     .title__event{

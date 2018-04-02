@@ -1,11 +1,13 @@
  {{navbar-home logout="sair" fb=model.fb}}
   
 <section class="home__body">
-    {{component-search}}
-    <h3 class="title__post">Encontre uma ONG</h3>
-    {{post-box model=model.user}}
-    <h3 class="title__post">Eventos</h3>
-    {{event-box event=model}}
+    <div class="container">
+        {{component-search}}
+        <h3 class="title__post">Encontre uma ONG</h3>
+        {{post-box model=model.user}}
+        <h3 class="title__post">Eventos</h3>
+        {{event-box event=model}}
+    </div>
     
 </section>
 

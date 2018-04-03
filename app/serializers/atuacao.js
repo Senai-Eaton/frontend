@@ -5,11 +5,19 @@ export default DS.RESTSerializer.extend({
         payload = { atuacaos: payload }
         return this._super(store, primaryModelClass, payload, id, requestType);
     },
-    modelNameFromPayloadKey(payloadKey) {
-        if (payloadKey === 'api/atuacaos') {
-          return this._super(payloadKey.replace('api/', ''));
-        } else {
-         return this._super(payloadKey);
-        }
-      }
+    // normalizeSingleResponse(store, primaryModelClass, payload, id, requestType) {
+    //     payload = { atuacaos: payload }
+    //     return this._super(store, primaryModelClass, payload, id, requestType);
+    // },
+    normalizeArrayResponse(store, primaryModelClass, payload, id, requestType) {
+        payload = { atuacaos: payload }
+        return this._super(store, primaryModelClass, payload, id, requestType);
+    },
+    // modelNameFromPayloadKey(payloadKey) {
+    //     if (payloadKey === 'api/atuacaos') {
+    //       return this._super(payloadKey.replace('api/', ''));
+    //     } else {
+    //      return this._super(payloadKey);
+    //     }
+    //   }
 });

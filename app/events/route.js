@@ -1,10 +1,10 @@
 import Ember from 'ember';
 import Route from '@ember/routing/route';
-import {inject as service} from '@ember/service';
+import { inject as service } from '@ember/service';
 
 export default Route.extend({
     fb: service(),
-    
+
     // model(){
     //     return Ember.RSVP.hash({
     //         fb: this.get('fb').api('/me'),
@@ -12,7 +12,11 @@ export default Route.extend({
     //         atuacao: this.get('store').findRecord('atuacao',1)
     //     });
     // }
-    model(params){
-        return this.get('store').queryRecord('atuacao', {id: params.id});
+    model(params) {
+        return Ember.RSVP.hash({
+            fb: this.get('fb').api('/me'),
+            atuacao: this.get('store').queryRecord('atuacao', { id: params.id }),
+            listar: this.get('store').findAll('listar')
+        });
     }
 });

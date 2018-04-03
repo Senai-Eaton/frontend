@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "ember-cli-sass": "^7.1.7",
+    "ember-inflector": "^2.2.0",
     "ember-test-selectors": "^0.3.8",
     "firebase-tools": "^3.17.6"
   }

@@ -1,6 +1,8 @@
 <section class="events">
     <div class="events__timeline">
-        <h3 class="events__description">Evento: {{evento}}</h3>
+        {{#each listar as |lista|}}
+        <h3 class="events__description">Evento: {{listar.nome}}</h3>
+        {{/each}}
         <img class="img__ong" src="../img/evento_voluntariado_2.jpg" alt="Foto ONG">
         <article class="infos">
             <p class="infos__event">
@@ -12,7 +14,7 @@
                         <span class="infolist__text">Pessoa responsável: {{event.name}}</span>
                     </li>
                     <li class="infolist__item">
-                        <span class="infolist__text">Atuação em: {{model.nome}}</span>
+                        <span class="infolist__text">Atuação em: {{atuacao.nome}}</span>
                     </li>
                 </ul>
             </p>

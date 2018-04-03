@@ -1,4 +1,8 @@
 import DS from 'ember-data';
 
-export default DS.JSONAPIAdapter.extend({
+import urlTemplates from 'ember-data-url-templates';
+
+export default DS.RESTAdapter.extend(urlTemplates,{
+    host: 'http://corujasdev-001-site4.etempurl.com',
+    namespace: 'api',
 });

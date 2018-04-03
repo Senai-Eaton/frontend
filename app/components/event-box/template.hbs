@@ -1,10 +1,20 @@
 <div class="cards__container">
     <article class="events">
         <div class="events__timeline">
+            <div class="events__date">
+                <div class="events__date--day">
+                    <h3>03</h3>
+                    <span>ABR</span>
+                </div>
+
+                <div class="events__date--time">
+                    08h30
+                </div>
+            </div>
             <img class="img__ong" src="../img/evento_voluntariado_2.jpg" alt="Foto ONG">
             <div class="card__infos">
                 <p class="post__name">{{evento}}</p>
-                {{#link-to 'events'}}<span class="post__visit">{{visit}}</span>{{/link-to}}
+                {{#link-to 'events'}}<span class="post__visit">Ver evento</span>{{/link-to}}
             </div>
         </div>
     </article>

@@ -12,7 +12,7 @@ Router.map(function () {
   this.route('login', { path: '/login' });
   this.route('home', {path:'/home'});
   this.route('profile', {path:'/perfil'});
-  this.route('events', {path: '/evento'});
+  this.route('events', {path: '/descricao_evento'});
 });
 
 export default Router;

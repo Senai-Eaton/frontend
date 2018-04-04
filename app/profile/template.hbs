@@ -1,3 +1,18 @@
-<span style="color: black">{{model.user.name}}</span>
-<span style="color: black">{{model.nome}}</span>
+{{navbar-home fb=model.fb}}
+<article style="color: black">
+    <span style="font-weight: bold">{{model.fb.name}}</span>
+    <img src="#" alt="Imagem de perfil">
+    <br>
+    <p style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nisi perferendis sapiente aperiam aliquam maiores doloremque
+        veniam a, assumenda magnam quibusdam placeat, obcaecati in reprehenderit reiciendis eius alias consequatur soluta.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis fuga ab amet labore. Ad exercitationem,
+        doloribus odit tempore architecto a dolore corrupti natus, iste alias commodi nihil illum adipisci!
+    </p>
+    <br>
+    <ul>
+        <li>Área de Atuação:</li>
+        <li>{{model.atuacao.nome}}</li>
+    </ul>
 
+</article>
+{{footer-home}}

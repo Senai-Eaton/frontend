@@ -8,7 +8,7 @@ export default Route.extend({
 
     model(params) {
         return Ember.RSVP.hash({
-            // fb: this.get('fb').api('/me'),
+            fb: this.get('fb').api('/me'),
             atuacao: this.get('store').queryRecord('atuacao', { id: params.id })
         });
     }

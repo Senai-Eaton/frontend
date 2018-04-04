@@ -10,7 +10,7 @@ export default DS.RESTAdapter.extend(urlTemplates, {
     queryUrlTemplate: '{+host}/api/eventos/listar',
     
     queryRecord(store, type, query) {
-        return $.getJSON('/api/eventos/listar');
+        return $.getJSON('http://corujasdev-001-site4.etempurl.com/api/eventos/listar');
     },
     pathForType() {
         return Inflector.inflector.singularize("eventos/listars");

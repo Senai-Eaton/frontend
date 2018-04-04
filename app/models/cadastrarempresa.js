@@ -5,5 +5,5 @@ export default DS.Model.extend({
     senha: DS.attr('string'),
     foto : DS.attr('string'),
     tipousuario : DS.attr('string'),
-    voluntario: DS.attr('raw'),
+    empresa: DS.attr('empresa'),
 });

@@ -1,21 +1,39 @@
-<section class="events">
-    <div class="events__timeline">
-        <h3 class="events__description">Evento: {{evento}}</h3>
-        <img class="img__ong" src="../img/evento_voluntariado_2.jpg" alt="Foto ONG">
-        <article class="infos">
-            <p class="infos__event">
-                <ul class="infolist">
-                    <li class="infolist__item">
-                        <span class="infolist__text">ONG Organizadora: {{organizador}}</span>
-                    </li>
-                    <li class="infolist__item">
-                        <span class="infolist__text">Pessoa responsável: {{event.name}}</span>
-                    </li>
-                    <li class="infolist__item">
-                        <span class="infolist__text">Atuação em: {{model.nome}}</span>
-                    </li>
-                </ul>
-            </p>
-        </article>
+<section class="event-details">
+    <div class="container">
+
+        <div class="event-details__cover">
+            <h3 class="event-details__title">{{evento}}</h3>
+            <h4 class="event-details__author">ONG: {{organizador}} </h4>
+
+            <img class="event-details__photo" src="../img/evento_voluntariado_2.jpg" alt="Foto ONG">
+        </div>
+
+        <div class="event-details__content">    
+            <div class="event-details__description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro debitis laborum culpa iure consequatur aspernatur, velit,
+                quo maxime modi ullam ex nostrum magnam, illo repellendus neque voluptates sed facere?</p>
+                <p>Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Soluta ut fuga, dolorum exercitationem blanditiis sapiente repudiandae minima
+                iure quas voluptate in deleniti, tempore eum! Amet repellat eius aspernatur voluptate quae!</p>
+
+                <a href="#" class="event-details__button event-details__button--success">Confirmar participação</a>
+                <a href="#" class="event-details__button event-details__button--error">Cancelar participação</a>
+            </div>
+            <div class="event-details__infos">    
+                <div class="event-details__date">
+                    <div class="events__date--day">
+                        <h3>03</h3>
+                        <span>ABR</span>
+                    </div>
+
+                    <div class="events__date--time">
+                        08h30
+                    </div>
+                </div>
+                <div class="event-details__location">
+                    <iframe src="https://www.google.com/maps?q=Rua Benedito, 239, Penha, São Paulo&output=embed"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

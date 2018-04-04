@@ -1,11 +1,113 @@
-.events__description{
-    width: 100%;
-    text-align: center;
-    margin: 10px auto;
-}
+.event-details {
+    &__cover {
+        position: relative;
+    }
 
-.infos{
-    width: 100%;
-    height: auto;
+    &__title {
+        background: #fff;
+        color:  #37474f;
+        font-size: 2.2rem;
+        position: absolute;
+        padding: .7rem 1rem;
+        bottom: 4rem;
+        left: 2rem;
+    }
+
+    &__photo {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+
+    &__author {
+        background: #fff;
+        color:  #37474f;
+        padding: .3rem .4rem;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 2rem;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        padding: 1rem;
+        line-height: 1.3;
+        
+        p {
+            text-align: left;
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    &__infos {
+        box-shadow: 0 4px 19px rgba(0,0,0,.2);
+        border-radius: 10px;
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+    }
+
+    &__date {
+        color: #607d8b;
+        padding: .25rem;
     
+        &__day {
+            width:70px;
+            height:70px;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 1;
+            h3 {
+                color: #8BC34A;
+                font-weight: bold;
+                font-size: 1.6rem;
+                margin: 0;
+            }
+        }
+    
+        &__time {
+            background: #fff;
+            border-radius: 10px;
+            padding: 24px 10px 25px 35px;
+            margin-left: -30px;
+            font-size: 18px;
+        }
+    }
+
+    &__location {
+        font-size: 1.2rem;
+    }
+    
+    &__button {
+        color: #fff !important;
+        border-radius: 1000px;
+        display: inline-block;
+        padding: 1.3rem 2rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-top: 2rem;
+
+        &--success {
+            background: #8bc34a;
+        }
+
+        &--error {
+            background: #f44336;
+        }
+
+    }
+
+    iframe {
+        border: none;
+        width: 400px;
+        height: 300px;
+    }
 }

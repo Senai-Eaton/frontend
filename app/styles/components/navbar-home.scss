@@ -30,6 +30,7 @@
     margin: 0 2rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu__home{
@@ -48,12 +49,14 @@
     margin: 0px 10px;
     border-radius: 20px;
     display: block;
+    cursor: pointer;
 }
 
 .home__list--profile {
     display: flex;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1440px){

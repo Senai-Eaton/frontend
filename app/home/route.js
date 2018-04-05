@@ -8,7 +8,7 @@ export default Route.extend({
         return Ember.RSVP.hash({
             // user: this.get('store').findRecord('user', 1),
             fb: this.get('fb').api('/me'),
-            listar: this.get('store').findAll('listar'),
+            listar: this.get('store').queryRecord('listar', {id: params.id}),
             atuacao: this.get('store').queryRecord('atuacao', { id: params.id })
         });
     },

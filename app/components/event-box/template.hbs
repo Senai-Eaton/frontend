@@ -7,15 +7,14 @@
                     <h3>03</h3>
                     <span>ABR</span>
                 </div>
-
                 <div class="events__date--time">
                     08h30
                 </div>
             </div>
             <img class="img__ong" src="../img/evento_voluntariado_2.jpg" alt="Foto ONG">
             <div class="card__infos">
-                <p class="post__name">{{listar.nome}}</p>
-                {{#link-to 'events'}}<span class="post__visit">Ver evento</span>{{/link-to}}
+                <p class="post__name">{{atuacao.nome}}</p>
+                {{#link-to 'events.description' atuacao.id}}<span class="post__visit">Ver evento</span>{{/link-to}}
             </div>
         </div>
     </article>

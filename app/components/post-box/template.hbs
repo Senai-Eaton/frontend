@@ -4,7 +4,7 @@
             <img class="img__ong" src="../img/evento_voluntariado_3.jpg" alt="Foto ONG">
             <div class="card__infos">
                 <p class="post__name">{{model.name}}</p>
-                {{#link-to 'profile'}}<span class="post__visit">{{visit}}</span>{{/link-to}}
+                {{#link-to 'profile.user' atuacao.id}}<span class="post__visit">{{visit}}</span>{{/link-to}}
             </div>
         </div>
     </article>

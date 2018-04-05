@@ -2,8 +2,8 @@ import Component from '@ember/component';
 
 export default Component.extend({
     actions:{
-        cadastrar(){
-            this.get("cadastrar")();
+        cadastrar(model){
+            this.get("cadastrar")(model);
         }
     }
 });

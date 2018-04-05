@@ -48,7 +48,10 @@
   },
   "dependencies": {
     "ember-cli-sass": "^7.1.7",
+    "ember-data-model-fragments": "^3.0.0-beta.1",
     "ember-inflector": "^2.2.0",
+    "ember-notify": "^5.2.1",
+    "ember-simple-auth": "^1.5.0",
     "ember-test-selectors": "^0.3.8",
     "firebase-tools": "^3.17.6"
   }

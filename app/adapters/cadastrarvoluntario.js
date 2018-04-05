@@ -5,7 +5,9 @@ import {singularize} from 'ember-inflector';
 export default DS.RESTAdapter.extend(urlTemplates,{
     host: 'http://corujasdev-001-site4.etempurl.com',
     namespace: 'api',
-    createUrlTemplate: '{+host}/api/usuario/cadastrarvoluntario',
+    urlTemplate: '{+host}/api',
+    queryUrlTemplate: '{+host}/api/usuario/cadastrarvoluntario',
+    createRecordUrlTemplate: '{+host}/api/usuario/cadastrarvoluntario',
 
     pathForType(){
         Inflector.inflector.singularize("usuario/cadastrarvoluntarios");

@@ -1,12 +1,12 @@
 import DS from 'ember-data';
 
 export default DS.RESTSerializer.extend({
-    // normalizeArrayResponse(store, primaryModelClass, payload, id, requestType) {
-    //     payload = {listar: payload }
-    //     return this._super(store, primaryModelClass, payload, id, requestType);
-    // },
+    normalizeArrayResponse(store, primaryModelClass, payload, id, requestType) {
+        payload = {eventos: payload }
+        return this._super(store, primaryModelClass, payload, id, requestType);
+    },
     normalizeSingleResponse(store, primaryModelClass, payload, id, requestType) {
-        payload = {listar: payload.listar }
+        payload = {eventos: payload }
         return this._super(store, primaryModelClass, payload, id, requestType);
     },
     

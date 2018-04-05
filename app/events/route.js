@@ -16,7 +16,7 @@ export default Route.extend({
         return Ember.RSVP.hash({
             fb: this.get('fb').api('/me'),
             atuacao: this.get('store').queryRecord('atuacao', { id: params.id }),
-            listar: this.get('store').findAll('listar')
+            lista: this.get('store').queryRecord('listar', {id: params.id})
         });
     }
 });

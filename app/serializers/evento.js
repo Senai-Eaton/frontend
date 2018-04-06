@@ -3,7 +3,7 @@ import DS from 'ember-data';
 export default DS.RESTSerializer.extend({
     modelNameFromPayloadKey: function (payloadKey) {
         if (payloadKey === 'eventos/listar') {
-            return this._super(payloadKey.replace('/listar', ''));
+            return this._super(payloadKey.replace('s/listar', ''));
         } else {
             return this._super(payloadKey);
         }

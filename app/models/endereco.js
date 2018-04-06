@@ -1,7 +1,7 @@
 import DS from 'ember-data';
-import MF from 'ember-data-model-fragments';
+// import MF from 'ember-data-model-fragments';
 
-export default MF.Fragment.extend({
+export default DS.Model.extend({
     logradouro: DS.attr('string'),
     numero: DS.attr('number'),
     bairro: DS.attr('string'),

@@ -4,5 +4,7 @@ export default DS.Model.extend({
     nome: DS.attr('string'),
     descricao: DS.attr('string'),
     foto: DS.attr('string'),
-    datahora: DS.attr('date')
+    datahora: DS.attr('date'),
+    local: DS.attr('raw'),
+    endereco: DS.attr('raw')
 });

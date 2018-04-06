@@ -1,0 +1,49 @@
+.profile {
+  $photo-size: 150px;
+  $first-col-size: 200px;
+
+  &__header {
+    background: #07a5a6;
+    color: #fff;
+  }
+
+  &__divider {
+    display: flex;
+    padding: 30px;
+
+    > * {
+      flex: 1;
+      &:first-child {
+        width: $first-col-size;
+        flex: $first-col-size 0;
+        margin-right: 36px;
+        text-align: right;
+      }
+    }
+
+  }
+
+  &__name {
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  &__photo {
+    display: inline-block;
+    height: $photo-size;
+    width: $photo-size;
+    flex: $photo-size 0;
+    box-shadow: 0 0 7px rgba(0,0,0,.1);
+  }
+
+  &__infos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__bio {
+    font-size: 19px;
+  }
+}

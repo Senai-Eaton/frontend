@@ -1,15 +1,26 @@
 {{navbar-home fb=model.fb}}
-<article style="color: black">
-    <span style="font-weight: bold">{{model.empresa.nome}}</span>
-    <img src="#" alt="Imagem de perfil">
-    <br>
-    <p style="text-align: justify">{{model.empresa.descricao}}
-    </p>
-    <br>
-    <ul>
-        <li>Área de Atuação:</li>
-        <li>{{model.atuacao.nome}}</li>
-    </ul>
+<article class="profile">
+    <div class="profile__header">
+        <div class="container">
+            <div class="profile__divider">
+                <img class="profile__photo" src="#" alt="Imagem de perfil">
+                <div class="profile__infos">
+                    <h2 class="profile__name">{{model.empresa.nome}}</h2>
+                    <h5>Área de Atuação:</h5>
+                    <h4>{{model.atuacao.nome}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="profile__bio">
+        <div class="container">
+            <div class="profile__divider">
+                <h2>Biografia</h2>
+                <p style="text-align: justify">{{model.empresa.descricao}}
+                </p>
+            </div>
+        </div>
+    </div>
 </article>
 {{footer-home}}

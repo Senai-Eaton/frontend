@@ -52,6 +52,7 @@
     "ember-inflector": "^2.2.0",
     "ember-notify": "^5.2.1",
     "ember-simple-auth": "^1.5.0",
+    "ember-simple-auth-jwt": "^0.1.0",
     "ember-test-selectors": "^0.3.8",
     "firebase-tools": "^3.17.6"
   }

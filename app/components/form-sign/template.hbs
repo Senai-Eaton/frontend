@@ -1,15 +1,15 @@
 <form class="form__sign">
-    {{input data-test-name class="form-input__sign" value=model.voluntario.nome id="name" type="text" placeholder="Nome Completo"}}
-    {{input data-test-identification class="form-input__sign" value=model.email id="identification" type="email" placeholder="Email"}}
-    {{input data-test-image class="form-input__sign" id="image" value=model.foto type="text" placeholder="Insira um link para sua foto"}}
-    {{input data-test-option class="form-input__sign" name="opcao" id="opcao" value=model.tipoUsuario placeholder="Empresa ou Voluntário"}} 
-    {{input data-test-address_name class="form-input__sign" value=model.voluntario.endereco.logradouro id="address_name" type="text" placeholder="Endereço Completo"}}
-    {{input data-test-neighbourhood class="form-input__sign" value=model.voluntario.endereco.bairro id="neighbourhood_name" type="text" placeholder="Bairro"}}
-    {{input data-test-number class="form-input__sign" id="number" value=model.endereco.numero type="text" placeholder="Número da residência"}}
+    {{input data-test-name class="form-input__sign" value=model.usuario.voluntario.nome id="name" type="text" placeholder="Nome Completo"}}
+    {{input data-test-identification class="form-input__sign" value=model.usuario.email id="identification" type="email" placeholder="Email"}}
+    {{input data-test-image class="form-input__sign" id="image" value=usuario.usuario.foto type="text" placeholder="Insira um link para sua foto"}}
+    {{input data-test-option class="form-input__sign" name="opcao" id="opcao" value=usuario.usuario.tipoUsuario placeholder="Empresa ou Voluntário"}} 
+    {{input data-test-address_name class="form-input__sign" value=usuario.usuario.voluntario.endereco.logradouro id="address_name" type="text" placeholder="Endereço Completo"}}
+    {{input data-test-neighbourhood class="form-input__sign" value=usuario.usuario.voluntario.endereco.bairro id="neighbourhood_name" type="text" placeholder="Bairro"}}
+    {{input data-test-number class="form-input__sign" id="number" value=usuario.usuario.endereco.numero type="text" placeholder="Número da residência"}}
     {{input data-test-block class="form-input__sign" id="block" type="text" placeholder="Complemento (Caso houver)"}}
-    {{input data-test-city class="form-input__sign" value=model.voluntario.endereco.cidade id="city_name" type="text" placeholder="Cidade"}}
-    {{input data-test-state class="form-input__sign" value=model.endereco.estado id="state_name" type="text" placeholder="Estado"}}
-    {{input data-test-password class="form-input__sign" value=model.senha id="password" type="password" placeholder="Senha"}}
+    {{input data-test-city class="form-input__sign" value=usuario.usuario.voluntario.endereco.cidade id="city_name" type="text" placeholder="Cidade"}}
+    {{input data-test-state class="form-input__sign" value=usuario.usuario.voluntario.endereco.estado id="state_name" type="text" placeholder="Estado"}}
+    {{input data-test-password class="form-input__sign" value=usuario.usuario.senha id="password" type="password" placeholder="Senha"}}
     {{input data-test-confirmation_password class="form-input__sign" id="confirmation_password" type="password" placeholder="Confirmação de Senha"}}
     <button data-test-subscribe class="button__sign" {{action 'cadastrar' model}}>Cadastrar</button>
 </form>

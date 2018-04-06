@@ -8,8 +8,11 @@
         <h3 class="title__post">Eventos</h3>
         {{event-box evento=model.evento}}
 
-
         {{!-- {{event-box evento=model.evento}} --}}
     </div>
 </section>
+{{#each model.evento as |fdp|}}
+{{fdp.nome}}
+{{!-- {{fdp.senha}} --}}
+{{/each}}
 {{footer-home}}

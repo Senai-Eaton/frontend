@@ -1,12 +1,5 @@
-import Base from 'ember-simple-auth/authenticators/base';
+import JWTAuthenticator from 'ember-simple-auth-jwt/authenticators/jwt';
 
-export default Base.extend({
-  restore(data) {
-  },
-
-  authenticate(/*args*/) {
-  },
-
-  invalidate(data) {
-  }
+export default JWTAuthenticator.extend({
+  serverTokenEndpoint: 'http://corujasdev-001-site4.etempurl.com/api/usuario/autenticar'
 });

@@ -1,23 +1,25 @@
 
 import Controller from '@ember/controller';
-import { inject as service } from '@ember/service';
+import {inject as service} from '@ember/service';
 
 export default Controller.extend({
   fb: service(),
-  session: service('session'),
-
+  session: service(),
+  
   actions: {
-    authenticate: function () {
-      let { email, senha } = this.getProperties('identification', 'password'),
-        authenticator = 'authenticator:jwt';
-
-      this.get('session').authenticate(authenticator, email, senha);
-    },
     onClick() {
-      this.get('fb').login('email public_profile').then(() => {
-        this.transitionToRoute('home');
+      this.get('fb').login('email public_profile').then(()=> {
+      this.transitionToRoute('home');
       });
-    },
+    }
   }
+  //   authenticate() {
+  //     var {identification, password} = this.getProperties('email', 'senha'),
+  //       authenticator = 'authenticator:jwt';
+  //       console.log(authenticator)
+  //     console.log(this.getProperties('email', 'senha'))
+  //     this.get('session').authenticate(authenticator, identification, password);
+  //   }
+  // }
 });
 

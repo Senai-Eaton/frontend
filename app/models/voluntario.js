@@ -7,5 +7,4 @@ export default MF.Fragment.extend({
    dataNasc: DS.attr('date'),
    cpf: DS.attr('string'),
    bio: DS.attr('string'),
-   endereco: fragment('endereco')
 });

@@ -1,11 +1,13 @@
+{{#each empresa as |coco|}}
 <div class="cards__container">
     <article class="post">
         <div class="post__timeline">
-            <img class="img__ong" src="../img/evento_voluntariado_3.jpg" alt="Foto ONG">
+            <img class="img__ong" src="/img/evento_voluntariado_3.jpg" alt="Foto ONG">
             <div class="card__infos">
-                <p class="post__name">{{model.name}}</p>
-                {{#link-to 'profile.user' atuacao.id}}<span class="post__visit">{{visit}}</span>{{/link-to}}
+                <p class="post__name">{{coco.nome}}</p>
+                {{#link-to 'profile.user' coco.id}}<span class="post__visit">Visitar</span>{{/link-to}}
             </div>
         </div>
     </article>
 </div>
+{{/each}}

@@ -1,6 +1,6 @@
 <form>
-    {{input data-test-identification class="form-input" id="identification" value=value type="email" placeholder="Email"}} 
-    {{input data-test-password class="form-input" id="password" type="password" value=value2 placeholder="Senha"}} 
-    <button data-test-loginButton class="login login__button" {{action 'authenticate'}}>Entre na sua conta</button>    
+    {{input data-test-identification class="form-input" id="identification" value=email type="email" placeholder="Email"}} 
+    {{input data-test-password class="form-input" id="password" type="password" value=senha placeholder="Senha"}} 
+    <button data-test-loginButton class="login login__button" {{action 'login'}}>Entre na sua conta</button>    
 </form>
 {{component-message-alert}}

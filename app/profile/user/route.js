@@ -10,7 +10,9 @@ export default Route.extend({
     model(params) {
         return Ember.RSVP.hash({
             fb: this.get('fb').api('/me'),
-            atuacao: this.get('store').queryRecord('atuacao', { id: params.id }),
+            empresa: this.get('store').findRecord('empresa', params.id),
+            atuacao: this.get('store').findRecord('atuacao', params.id),
+            
         });
     }
 });

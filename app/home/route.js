@@ -8,17 +8,22 @@ export default Route.extend({
         return Ember.RSVP.hash({
             // user: this.get('store').findRecord('user', 1),
             fb: this.get('fb').api('/me'),
-            listar: this.get('store').queryRecord('listar', {id: params.id}),
-            atuacao: this.get('store').queryRecord('atuacao', { id: params.id })
+            // empresa: this.get('store').findRecord('empresa', 1),
+            empresa: this.get('store').findAll('empresa'),
+            // evento: this.get('store').findRecord('evento', params.evento_id)
         });
     },
-  actions:{
-      sair(){
-          this.get('fb').logout('email public_profile').then(()=>{
-              alert('Deslogado');
-              this.transitionTo('index');
-          })
-      }
-  }
+
+
+
+
+    actions: {
+        sair() {
+            this.get('fb').logout('email public_profile').then(() => {
+                alert('Deslogado');
+                this.transitionTo('index');
+            })
+        }
+    }
 
 });

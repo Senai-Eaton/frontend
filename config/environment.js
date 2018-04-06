@@ -52,7 +52,15 @@ module.exports = function (environment) {
     appId: '151236328889136',
     xfbml: true,
     version: 'v2.12'
-  }
+  };
+  ENV['ember-simple-auth'] = {
+    authorizer: 'authorizer:token',
+  };
+  ENV['ember-simple-auth-token'] = {
+    serverTokenEndpoint: 'http://corujasdev-001-site4.etempurl.com/api/usuario/autenticar',
+    identificationField: 'email',
+    passwordField: 'senha',
+  };
 
   return ENV;
 };

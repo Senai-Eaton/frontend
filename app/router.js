@@ -18,6 +18,7 @@ Router.map(function () {
   this.route('events', {path: '/eventos'}, function() {
     this.route('description', {path: '/descricao/:id'});
   });
+  this.route('new');
 });
 
 export default Router;

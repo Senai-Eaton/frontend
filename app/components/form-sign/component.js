@@ -2,8 +2,9 @@ import Component from '@ember/component';
 
 export default Component.extend({
     actions:{
-        cadastrar(model){
-            this.get("cadastrar")(model);
+        cadastrar(){
+            console.log(this.getProperties('[data-test-name]'))
+            this.get("cadastrar")();
         }
     }
 });

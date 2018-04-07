@@ -1,0 +1,13 @@
+<form>
+    {{input type="text" placeholder="nome" value=evento.nome}}
+    {{input type="text" placeholder="descricao" value=evento.descricao}}
+    {{input type="text" placeholder="foto" value=evento.foto}}
+    {{!-- {{input type="text" placeholder="data" value=evento.datahora}} --}}
+    {{input type="text" placeholder="logradouro" value=evento.local.logradouro}}
+    {{input type="text" placeholder="numero" value=evento.local.numero}}
+    {{input type="text" placeholder="bairro" value=evento.local.bairro}}
+    {{input type="text" placeholder="cidade" value=evento.local.cidade}}
+    {{input type="text" placeholder="estado" value=evento.local.estado}}
+    {{input type="text" placeholder="cep" value=evento.local.cep}}
+    <button {{action 'criar' evento}}>Enviar</button>
+</form>
